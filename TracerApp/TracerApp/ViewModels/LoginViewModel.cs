@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using TracerApp.Navigation;
 using TracerApp.Pages;
 
 namespace TracerApp.ViewModels

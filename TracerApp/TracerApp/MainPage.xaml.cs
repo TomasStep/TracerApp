@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TracerApp.Navigation;
 using TracerApp.Pages;
 using Xamarin.Forms;
 using TracerApp.ViewModels;
