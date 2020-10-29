@@ -55,5 +55,15 @@ namespace TracerApp.ViewModels
         {
             Application.Current.MainPage = new LoginPage();
         }
+
+        public void GoToScan()
+        {
+            Application.Current.MainPage = new ScanPage();
+        }
+
+        public void GoToMain()
+        {
+            Application.Current.MainPage = new MainPage();
+        }
     }  
 }

@@ -11,17 +11,17 @@
         <Button Text="Register"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"
+                Clicked="BtnClicked_Scan"
                 Margin="30,10,30,10"/>
         <Button Text="Login"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"
+                Clicked="BtnClicked_Login"
                 Margin="30,10,30,10"/>
         <Button Text="About"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"
+                Clicked="BtnClicked_Login"
                 Margin="30,10,30,10"/>
     </StackLayout>
 </ContentPage>
