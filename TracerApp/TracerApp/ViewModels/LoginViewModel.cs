@@ -16,7 +16,6 @@ namespace TracerApp.ViewModels
 
         public ICommand SubmitCommand { protected set; get; }
 
-
         public string Email
         {
             get { return email; }
@@ -44,10 +43,7 @@ namespace TracerApp.ViewModels
             if (email != "asd@gmail.com" || password != "secret")
             {
                 DisplayInvalidLoginPrompt();
-            
             }
-
-            
         }  
     }  
 }
