@@ -4,18 +4,24 @@
              x:Class="TracerApp.MainPage">
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Tracer App" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Please Login and Register you appointment" FontSize="12" Padding="30,10,30,10"/>
 
-        <Label x:Name="label"
-               Text="Click the Button below"
-               FontSize="Large"
-               VerticalOptions="CenterAndExpand"
-               HorizontalOptions="Center" />
-        <Button Text="Go To Login Page"
+        <Button Text="Register"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"
+                Margin="30,10,30,10"/>
+        <Button Text="Login"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                Margin="30,10,30,10"/>
+        <Button Text="About"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                Margin="30,10,30,10"/>
     </StackLayout>
 </ContentPage>
