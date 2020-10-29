@@ -21,11 +21,17 @@ namespace TracerApp
             await Navigation.PushAsync(new LoginPage());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void BtnClicked_Login(object sender, EventArgs e)
+        {
+            LoginViewModel vm = new LoginViewModel();
+            
+            vm.GoToLogin();
+        }
+        private void BtnClicked_Scan(object sender, EventArgs e)
         {
             LoginViewModel vm = new LoginViewModel();
 
-            vm.GoToLogin();
+            vm.GoToScan();
         }
     }
 }
