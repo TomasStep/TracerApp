@@ -4,7 +4,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TracerApp.Navigation;
+using TracerApp.Pages;
 using Xamarin.Forms;
+using TracerApp.ViewModels;
 
 namespace TracerApp
 {
@@ -13,6 +16,17 @@ namespace TracerApp
         public MainPage()
         {
             InitializeComponent();
+        }
+        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            LoginViewModel vm = new LoginViewModel();
+
+            vm.GoToLogin();
         }
     }
 }

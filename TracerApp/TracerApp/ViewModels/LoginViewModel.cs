@@ -3,10 +3,12 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using TracerApp.Navigation;
+using TracerApp.Pages;
 
 namespace TracerApp.ViewModels
 {
-    class LoginViewModel : INotifyPropertyChanged  
+    class LoginViewModel : INotifyPropertyChanged
     {  
         public Action DisplayInvalidLoginPrompt;
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
@@ -43,7 +45,16 @@ namespace TracerApp.ViewModels
             if (email != "asd@gmail.com" || password != "secret")
             {
                 DisplayInvalidLoginPrompt();
+                return;
+            }else 
+            { 
+                Application.Current.MainPage = new MainPage();
             }
-        }  
+        }
+
+        public void GoToLogin()
+        {
+            Application.Current.MainPage = new LoginPage();
+        }
     }  
 }
