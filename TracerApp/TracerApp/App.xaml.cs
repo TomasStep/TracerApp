@@ -15,6 +15,7 @@ namespace TracerApp
 
         protected override void OnStart()
         {
+            MainPage = new Pages.LoginPage();
         }
 
         protected override void OnSleep()
